@@ -1,0 +1,62 @@
+@import "~normalize.css";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  align-items: center;
+  background-color: #16215c;
+  display: flex;
+  font-family: "Spartan", sans-serif;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.main {
+  max-width: 50vw;
+}
+
+.title {
+  color: #f7a558;
+  font-size: 5em;
+  line-height: 1.1;
+  margin-bottom: 0.5em;
+  margin-top: 0;
+}
+
+.content {
+  color: #fff;
+  line-height: 1.5;
+}
+
+.content .line {
+  opacity: 0.5;
+  transition: all 0.5s ease-in-out;
+}
+
+.content .line:hover {
+  opacity: 1;
+}
+
+.split-text .line {
+  display: block;
+}
+
+@keyframes anim {
+  0% {
+    color: black;
+    -webkit-text-stroke: 2px black;
+  }
+  100% {
+    color: white;
+    -webkit-text-stroke: 2px white;
+  }
+}
